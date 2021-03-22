@@ -1,0 +1,1258 @@
+2021-03-21 07:10:58.154 +01:00 [INF] Application started
+2021-03-21 07:20:40.631 +01:00 [INF] Application started
+2021-03-21 07:20:42.358 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 07:20:42.360 +01:00 [INF] Hosting environment: Development
+2021-03-21 07:20:42.361 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 07:20:42.471 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 07:20:42.686 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 216.4664ms
+2021-03-21 07:20:42.908 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 07:20:42.984 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 85.7065ms
+2021-03-21 07:21:03.766 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/api/Asset - -
+2021-03-21 07:21:03.801 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 07:21:03.846 +01:00 [INF] Route matched with {action = "GetAllAssets", controller = "Asset"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAssets() on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 07:21:04.191 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 07:21:12.846 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 07:21:25.399 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 21200.1098ms.
+2021-03-21 07:21:25.405 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[System.Collections.Generic.IEnumerable`1[[Hahn.ApplicationProcess.February2021.Data.Core.Data.Asset, Hahn.ApplicationProcess.February2021.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Runtime.CompilerServices.IAsyncStateMachine, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-03-21 07:21:25.440 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web) in 21589.3434ms
+2021-03-21 07:21:25.442 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 07:21:25.503 +01:00 [ERR] A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles.
+System.Text.Json.JsonException: A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWriteAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWriteAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWriteAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWriteAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWriteAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWriteAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWriteAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWriteAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWriteAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWriteAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWriteAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWriteAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWriteAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWriteAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWriteAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCoreAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteCore[TValue](JsonConverter jsonConverter, Utf8JsonWriter writer, TValue& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteAsyncCore[TValue](Stream utf8Json, TValue value, Type inputType, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|21_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Hahn.ApplicationProcess.February2021.Web.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web\Middleware\ExceptionMiddleware.cs:line 29
+2021-03-21 07:21:25.626 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/api/Asset - - - 500 - application/json 21859.2824ms
+2021-03-21 07:23:32.186 +01:00 [INF] Application started
+2021-03-21 07:23:33.828 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 07:23:33.831 +01:00 [INF] Hosting environment: Development
+2021-03-21 07:23:33.832 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 07:23:33.868 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 07:23:34.199 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 331.4554ms
+2021-03-21 07:23:34.343 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 07:23:34.428 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 85.6120ms
+2021-03-21 07:23:38.001 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/api/Asset - -
+2021-03-21 07:23:38.030 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 07:23:38.063 +01:00 [INF] Route matched with {action = "GetAllAssets", controller = "Asset"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAssets() on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 07:23:38.309 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 07:23:41.671 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 07:23:41.810 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3494.0795ms.
+2021-03-21 07:23:41.816 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Threading.Tasks.Task`1[[System.Collections.Generic.IEnumerable`1[[Hahn.ApplicationProcess.February2021.Data.Core.Data.Asset, Hahn.ApplicationProcess.February2021.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-03-21 07:23:41.862 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web) in 3793.3953ms
+2021-03-21 07:23:41.863 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 07:23:41.866 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/api/Asset - - - 200 - application/json;+charset=utf-8 3865.6265ms
+2021-03-21 07:24:36.189 +01:00 [INF] Application started
+2021-03-21 07:24:37.572 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 07:24:37.575 +01:00 [INF] Hosting environment: Development
+2021-03-21 07:24:37.577 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 07:24:37.617 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 07:24:37.758 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 144.3128ms
+2021-03-21 07:24:37.901 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 07:24:37.978 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 76.8362ms
+2021-03-21 07:24:41.364 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/api/Asset - -
+2021-03-21 07:24:41.394 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 07:24:41.421 +01:00 [INF] Route matched with {action = "GetAllAssets", controller = "Asset"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAssets() on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 07:24:41.638 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 07:24:41.938 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 07:24:47.601 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5954.5148ms.
+2021-03-21 07:24:47.608 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hahn.ApplicationProcess.February2021.Data.Core.Data.Asset, Hahn.ApplicationProcess.February2021.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-03-21 07:24:47.625 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web) in 6198.4011ms
+2021-03-21 07:24:47.625 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 07:24:47.629 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/api/Asset - - - 200 - application/json;+charset=utf-8 6264.5926ms
+2021-03-21 07:40:30.932 +01:00 [INF] Application started
+2021-03-21 07:40:32.667 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 07:40:32.670 +01:00 [INF] Hosting environment: Development
+2021-03-21 07:40:32.672 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 07:40:32.717 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 07:40:32.851 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 137.1648ms
+2021-03-21 07:40:32.995 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 07:40:33.099 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 103.3267ms
+2021-03-21 07:41:42.149 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset application/json 153
+2021-03-21 07:41:42.179 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 07:41:42.214 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 07:41:42.489 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 07:46:33.145 +01:00 [INF] Application started
+2021-03-21 07:46:35.083 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 07:46:35.086 +01:00 [INF] Hosting environment: Development
+2021-03-21 07:46:35.087 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 07:46:35.117 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 07:46:35.289 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 176.4477ms
+2021-03-21 07:46:35.423 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 07:46:35.535 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 112.0789ms
+2021-03-21 09:42:58.571 +01:00 [INF] Application started
+2021-03-21 09:43:08.931 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 09:43:08.939 +01:00 [INF] Hosting environment: Development
+2021-03-21 09:43:08.940 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 09:43:08.968 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 09:43:09.154 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 189.0345ms
+2021-03-21 09:43:09.261 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 09:43:09.429 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 167.6800ms
+2021-03-21 09:44:00.473 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset application/json 171
+2021-03-21 09:44:00.527 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 09:44:00.565 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 09:44:00.852 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 09:44:27.064 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) in 26495.0221ms
+2021-03-21 09:44:27.065 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 09:44:27.605 +01:00 [ERR] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hahn.ApplicationProcess.February2021.Domain.Implementations.AssetProvider.SaveAsset(SaveAssetDto saveAssetDto) in C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Domain\Implementations\AssetProvider.cs:line 58
+   at Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset(SaveAssetDto asset) in C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web\Controllers\General\AssetController.cs:line 30
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Hahn.ApplicationProcess.February2021.Web.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web\Middleware\ExceptionMiddleware.cs:line 29
+2021-03-21 09:44:27.699 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44373/api/Asset application/json 171 - 500 - application/json 27227.5754ms
+2021-03-21 09:44:39.985 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset application/json 171
+2021-03-21 09:44:39.986 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 09:44:39.986 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 09:44:40.023 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 09:46:07.009 +01:00 [INF] Application started
+2021-03-21 09:46:25.560 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 09:46:25.564 +01:00 [INF] Hosting environment: Development
+2021-03-21 09:46:25.565 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 09:46:25.616 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 09:46:25.799 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 185.6094ms
+2021-03-21 09:46:25.975 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 09:46:26.119 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 143.4837ms
+2021-03-21 09:46:57.156 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset application/json 164
+2021-03-21 09:46:57.189 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 09:46:57.239 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 09:46:57.449 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 09:47:03.985 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 09:47:47.871 +01:00 [INF] Application started
+2021-03-21 09:47:54.330 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 09:47:54.333 +01:00 [INF] Hosting environment: Development
+2021-03-21 09:47:54.334 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 09:47:54.365 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 09:47:54.514 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 150.3987ms
+2021-03-21 09:47:54.640 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 09:47:54.778 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 138.4499ms
+2021-03-21 09:47:59.360 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/api/Asset - -
+2021-03-21 09:47:59.394 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 09:47:59.424 +01:00 [INF] Route matched with {action = "GetAllAssets", controller = "Asset"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAssets() on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 09:47:59.615 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 09:47:59.890 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 09:48:07.277 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 7655.7311ms.
+2021-03-21 09:48:07.283 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hahn.ApplicationProcess.February2021.Data.Core.Data.Asset, Hahn.ApplicationProcess.February2021.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-03-21 09:48:07.295 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web) in 7867.0413ms
+2021-03-21 09:48:07.296 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 09:48:07.301 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/api/Asset - - - 200 - application/json;+charset=utf-8 7940.8418ms
+2021-03-21 09:48:37.657 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset application/json 165
+2021-03-21 09:48:37.657 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 09:48:37.681 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 09:48:37.738 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 09:48:45.035 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 09:48:46.006 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-21 09:48:53.389 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 15651.7643ms.
+2021-03-21 09:48:53.390 +01:00 [INF] Executing OkObjectResult, writing value of type 'Hahn.ApplicationProcess.February2021.Data.Core.Data.Asset'.
+2021-03-21 09:48:53.399 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) in 15718.209ms
+2021-03-21 09:48:53.400 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 09:48:53.402 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44373/api/Asset application/json 165 - 200 - application/json;+charset=utf-8 15745.3418ms
+2021-03-21 09:48:58.386 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/api/Asset - -
+2021-03-21 09:48:58.386 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 09:48:58.386 +01:00 [INF] Route matched with {action = "GetAllAssets", controller = "Asset"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAssets() on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 09:48:58.433 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 09:48:58.441 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 09:49:02.242 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3809.1231ms.
+2021-03-21 09:49:02.242 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hahn.ApplicationProcess.February2021.Data.Core.Data.Asset, Hahn.ApplicationProcess.February2021.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-03-21 09:49:02.243 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web) in 3856.6924ms
+2021-03-21 09:49:02.243 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 09:49:02.246 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/api/Asset - - - 200 - application/json;+charset=utf-8 3859.7181ms
+2021-03-21 09:49:57.847 +01:00 [INF] Application started
+2021-03-21 09:50:02.245 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 09:50:02.256 +01:00 [INF] Hosting environment: Development
+2021-03-21 09:50:02.257 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 09:50:02.290 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 09:50:02.477 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 189.1010ms
+2021-03-21 09:50:02.626 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 09:50:02.787 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 161.1274ms
+2021-03-21 09:50:08.114 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/api/Asset - -
+2021-03-21 09:50:08.151 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 09:50:08.179 +01:00 [INF] Route matched with {action = "GetAllAssets", controller = "Asset"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAssets() on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 09:50:08.384 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 09:50:08.660 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 09:50:15.483 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 7093.5765ms.
+2021-03-21 09:50:15.489 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hahn.ApplicationProcess.February2021.Data.Core.Data.Asset, Hahn.ApplicationProcess.February2021.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-03-21 09:50:15.504 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web) in 7317.8004ms
+2021-03-21 09:50:15.504 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 09:50:15.507 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/api/Asset - - - 200 - application/json;+charset=utf-8 7392.7911ms
+2021-03-21 09:50:40.529 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset application/json 175
+2021-03-21 09:50:40.538 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 09:50:40.553 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 09:50:40.612 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 09:50:46.548 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 09:50:47.510 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-21 09:50:48.852 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8239.9307ms.
+2021-03-21 09:50:48.852 +01:00 [INF] Executing OkObjectResult, writing value of type 'Hahn.ApplicationProcess.February2021.Data.Core.Data.Asset'.
+2021-03-21 09:50:48.859 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) in 8305.9183ms
+2021-03-21 09:50:48.859 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 09:50:48.859 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44373/api/Asset application/json 175 - 200 - application/json;+charset=utf-8 8330.3459ms
+2021-03-21 09:54:56.398 +01:00 [INF] Application started
+2021-03-21 09:55:00.859 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 09:55:00.862 +01:00 [INF] Hosting environment: Development
+2021-03-21 09:55:00.864 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 09:55:00.905 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 09:55:01.115 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 214.2065ms
+2021-03-21 09:55:01.226 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 09:55:01.362 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 135.7328ms
+2021-03-21 09:55:28.104 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset application/json 160
+2021-03-21 09:55:28.145 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 09:55:28.196 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 09:55:28.422 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 09:55:36.464 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 09:55:36.606 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-21 09:55:36.618 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8189.8219ms.
+2021-03-21 09:55:36.624 +01:00 [INF] Executing OkObjectResult, writing value of type 'Hahn.ApplicationProcess.February2021.Data.Core.Data.Asset'.
+2021-03-21 09:55:36.643 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) in 8443.0235ms
+2021-03-21 09:55:36.644 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 09:55:36.646 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44373/api/Asset application/json 160 - 200 - application/json;+charset=utf-8 8542.9869ms
+2021-03-21 10:33:34.986 +01:00 [INF] Application started
+2021-03-21 10:33:42.759 +01:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-03-21 10:33:43.204 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 10:33:43.204 +01:00 [INF] Hosting environment: Development
+2021-03-21 10:33:43.204 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 10:33:43.262 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 10:33:43.418 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 154.9606ms
+2021-03-21 10:33:43.541 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 10:33:43.650 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 109.1066ms
+2021-03-21 10:34:17.979 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset application/json 160
+2021-03-21 10:34:18.009 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 10:34:18.061 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 10:34:18.385 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 10:34:24.332 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 10:34:24.459 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-21 10:34:24.469 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6079.0539ms.
+2021-03-21 10:34:24.475 +01:00 [INF] Executing OkObjectResult, writing value of type 'Hahn.ApplicationProcess.February2021.Data.Core.Data.Asset'.
+2021-03-21 10:34:24.494 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) in 6428.4145ms
+2021-03-21 10:34:24.494 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 10:34:24.499 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44373/api/Asset application/json 160 - 200 - application/json;+charset=utf-8 6527.4820ms
+2021-03-21 10:42:35.664 +01:00 [INF] Application started
+2021-03-21 10:42:43.421 +01:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-03-21 10:42:43.684 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 10:42:43.684 +01:00 [INF] Hosting environment: Development
+2021-03-21 10:42:43.684 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 10:42:43.742 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 10:42:43.915 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 153.8439ms
+2021-03-21 10:42:44.094 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 10:42:44.212 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 117.9347ms
+2021-03-21 10:43:09.805 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset application/json 160
+2021-03-21 10:43:09.850 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 10:43:09.908 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 10:43:10.140 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 10:44:15.843 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) in 65930.2271ms
+2021-03-21 10:44:15.845 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 10:44:18.177 +01:00 [ERR] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hahn.ApplicationProcess.February2021.Domain.DataValidators.AssetValidator.ValidateCountry(String countryName) in C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Domain\DataValidators\AssetValidator.cs:line 42
+   at Hahn.ApplicationProcess.February2021.Domain.DataValidators.AssetValidator.<.ctor>b__2_3(String countryName, CancellationToken cancellation) in C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Domain\DataValidators\AssetValidator.cs:line 30
+   at FluentValidation.Validators.AsyncPredicateValidator.IsValid(PropertyValidatorContext context) in C:\Projects\FluentValidation\src\FluentValidation\Validators\AsyncPredicateValidator.cs:line 47
+   at FluentValidation.Validators.PropertyValidator.Validate(PropertyValidatorContext context) in C:\Projects\FluentValidation\src\FluentValidation\Validators\PropertyValidator.cs:line 77
+   at FluentValidation.Internal.PropertyRule.InvokePropertyValidator(IValidationContext context, IPropertyValidator validator, String propertyName) in C:\Projects\FluentValidation\src\FluentValidation\Internal\PropertyRule.cs:line 519
+   at FluentValidation.Internal.PropertyRule.Validate(IValidationContext context)+MoveNext() in C:\Projects\FluentValidation\src\FluentValidation\Internal\PropertyRule.cs:line 351
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) in C:\Projects\FluentValidation\src\FluentValidation\AbstractValidator.cs:line 95
+   at FluentValidation.AbstractValidator`1.Validate(T instance) in C:\Projects\FluentValidation\src\FluentValidation\AbstractValidator.cs:line 62
+   at Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset(SaveAssetDto asset) in C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web\Controllers\General\AssetController.cs:line 32
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Hahn.ApplicationProcess.February2021.Web.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web\Middleware\ExceptionMiddleware.cs:line 29
+2021-03-21 10:44:18.320 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44373/api/Asset application/json 160 - 500 - application/json 68525.0367ms
+2021-03-21 10:44:24.772 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset application/json 160
+2021-03-21 10:44:24.773 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 10:44:24.773 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 10:44:24.806 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 10:55:07.478 +01:00 [INF] Application started
+2021-03-21 10:55:53.831 +01:00 [INF] Application started
+2021-03-21 10:55:56.385 +01:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-03-21 10:55:56.691 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 10:55:56.691 +01:00 [INF] Hosting environment: Development
+2021-03-21 10:55:56.691 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 10:55:56.773 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 10:55:56.926 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 155.2112ms
+2021-03-21 10:55:57.079 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 10:55:57.208 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 128.3986ms
+2021-03-21 10:57:22.098 +01:00 [INF] Application started
+2021-03-21 10:57:24.414 +01:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-03-21 10:57:24.714 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 10:57:24.715 +01:00 [INF] Hosting environment: Development
+2021-03-21 10:57:24.715 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 10:57:24.775 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 10:57:24.946 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 171.4885ms
+2021-03-21 10:57:25.068 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 10:57:25.273 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 204.8804ms
+2021-03-21 10:58:05.491 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset application/json 164
+2021-03-21 10:58:05.526 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 10:58:05.587 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 10:58:05.915 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 11:02:10.385 +01:00 [INF] Application started
+2021-03-21 11:02:12.474 +01:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-03-21 11:02:12.776 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 11:02:12.776 +01:00 [INF] Hosting environment: Development
+2021-03-21 11:02:12.776 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 11:02:12.832 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 11:02:12.994 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 166.1332ms
+2021-03-21 11:02:13.145 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 11:02:13.284 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 139.1762ms
+2021-03-21 11:02:38.155 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset application/json 161
+2021-03-21 11:02:38.202 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 11:02:38.252 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 11:02:38.481 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 11:03:00.169 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 21678.3452ms.
+2021-03-21 11:03:00.176 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-03-21 11:03:00.191 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) in 21933.6048ms
+2021-03-21 11:03:00.191 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 11:03:00.194 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44373/api/Asset application/json 161 - 400 - application/json;+charset=utf-8 22040.0409ms
+2021-03-21 11:03:16.426 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset application/json 168
+2021-03-21 11:03:16.426 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 11:03:16.427 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 11:03:16.460 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 11:03:33.201 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 11:03:33.327 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-21 11:03:33.334 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 16873.6198ms.
+2021-03-21 11:03:33.334 +01:00 [INF] Executing OkObjectResult, writing value of type 'Hahn.ApplicationProcess.February2021.Data.Core.Data.Asset'.
+2021-03-21 11:03:33.341 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) in 16914.685ms
+2021-03-21 11:03:33.342 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 11:03:33.344 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44373/api/Asset application/json 168 - 200 - application/json;+charset=utf-8 16918.8657ms
+2021-03-21 11:03:46.808 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset application/json 159
+2021-03-21 11:03:46.808 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 11:03:46.808 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 11:03:46.842 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 11:03:54.210 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 7368.319ms.
+2021-03-21 11:03:54.211 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-03-21 11:03:54.211 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) in 7402.7824ms
+2021-03-21 11:03:54.211 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 11:03:54.212 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44373/api/Asset application/json 159 - 400 - application/json;+charset=utf-8 7404.2631ms
+2021-03-21 16:41:53.075 +01:00 [INF] Application started
+2021-03-21 16:41:55.957 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 16:41:55.961 +01:00 [INF] Hosting environment: Development
+2021-03-21 16:41:55.962 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 16:41:56.018 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 16:41:56.242 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 230.7655ms
+2021-03-21 16:41:56.407 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 16:41:56.573 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 166.0281ms
+2021-03-21 16:42:22.722 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset application/json 167
+2021-03-21 16:42:22.784 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 16:42:22.825 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 16:42:23.167 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 16:42:29.060 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 16:42:29.222 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-21 16:42:29.232 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6059.1142ms.
+2021-03-21 16:42:29.238 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Int32'.
+2021-03-21 16:42:29.251 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) in 6418.1522ms
+2021-03-21 16:42:29.251 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 16:42:29.254 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44373/api/Asset application/json 167 - 200 - application/json;+charset=utf-8 6531.4938ms
+2021-03-21 16:54:56.936 +01:00 [INF] Application started
+2021-03-21 16:54:59.331 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 16:54:59.335 +01:00 [INF] Hosting environment: Development
+2021-03-21 16:54:59.336 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 16:54:59.370 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 16:54:59.524 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 155.5614ms
+2021-03-21 16:54:59.674 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 16:54:59.704 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Asset" for actions - Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web),Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-21 16:54:59.868 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 500 - text/plain 193.8372ms
+2021-03-21 16:56:11.649 +01:00 [INF] Application started
+2021-03-21 16:56:13.433 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 16:56:13.435 +01:00 [INF] Hosting environment: Development
+2021-03-21 16:56:13.436 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 16:56:13.468 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 16:56:13.639 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 173.6805ms
+2021-03-21 16:56:13.769 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 16:56:13.818 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Asset" for actions - Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web),Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-21 16:56:13.894 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 500 - text/plain 125.1534ms
+2021-03-21 16:56:25.218 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/swagger-ui-bundle.js.map - -
+2021-03-21 16:56:25.219 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/swagger-ui-standalone-preset.js.map - -
+2021-03-21 16:56:25.226 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/swagger-ui.css.map - -
+2021-03-21 16:56:25.272 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/swagger-ui-standalone-preset.js.map - - - 404 - - 53.3557ms
+2021-03-21 16:56:25.274 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/swagger-ui.css.map - - - 404 - - 49.5578ms
+2021-03-21 16:56:25.274 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/swagger-ui-bundle.js.map - - - 404 - - 56.5279ms
+2021-03-21 16:56:36.369 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 16:56:36.371 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 2.1610ms
+2021-03-21 16:56:36.641 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/swagger-ui-standalone-preset.js.map - -
+2021-03-21 16:56:36.641 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/swagger-ui-bundle.js.map - -
+2021-03-21 16:56:36.643 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/swagger-ui.css.map - -
+2021-03-21 16:56:36.643 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/swagger-ui-standalone-preset.js.map - - - 404 - - 2.0537ms
+2021-03-21 16:56:36.644 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/swagger-ui.css.map - - - 404 - - 0.8600ms
+2021-03-21 16:56:36.653 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/swagger-ui-bundle.js.map - - - 404 - - 12.3609ms
+2021-03-21 16:56:36.675 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 16:56:36.677 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Asset" for actions - Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web),Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-21 16:56:36.682 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 500 - text/plain 6.4483ms
+2021-03-21 16:56:36.699 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/favicon-32x32.png - -
+2021-03-21 16:56:36.718 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2021-03-21 16:56:36.718 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/favicon-32x32.png - - - 200 628 image/png 19.5093ms
+2021-03-21 16:56:47.630 +01:00 [INF] Application started
+2021-03-21 16:56:49.260 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 16:56:49.262 +01:00 [INF] Hosting environment: Development
+2021-03-21 16:56:49.263 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 16:56:49.290 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 16:56:49.441 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 151.2617ms
+2021-03-21 16:56:49.574 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 16:56:49.597 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Asset" for actions - Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web),Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-21 16:56:49.681 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 500 - text/plain 107.1267ms
+2021-03-21 17:02:11.836 +01:00 [INF] Application started
+2021-03-21 17:02:14.001 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 17:02:14.004 +01:00 [INF] Hosting environment: Development
+2021-03-21 17:02:14.005 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 17:02:14.034 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 17:02:14.189 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 155.7205ms
+2021-03-21 17:02:14.317 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 17:02:14.352 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Asset" for actions - Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web),Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-21 17:02:14.421 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 500 - text/plain 103.4213ms
+2021-03-21 17:02:21.170 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/swagger-ui-bundle.js.map - -
+2021-03-21 17:02:21.171 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/swagger-ui-standalone-preset.js.map - -
+2021-03-21 17:02:21.176 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/swagger-ui.css.map - -
+2021-03-21 17:02:21.225 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/swagger-ui-bundle.js.map - - - 404 - - 54.5586ms
+2021-03-21 17:02:21.226 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/swagger-ui.css.map - - - 404 - - 50.6179ms
+2021-03-21 17:02:21.226 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/swagger-ui-standalone-preset.js.map - - - 404 - - 55.1902ms
+2021-03-21 17:03:01.260 +01:00 [INF] Application started
+2021-03-21 17:03:03.848 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 17:03:03.854 +01:00 [INF] Hosting environment: Development
+2021-03-21 17:03:03.855 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 17:03:03.885 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 17:03:04.088 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 207.6435ms
+2021-03-21 17:03:04.221 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 17:03:04.244 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Asset" for actions - Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web),Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-21 17:03:04.312 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 500 - text/plain 90.2568ms
+2021-03-21 17:03:40.639 +01:00 [INF] Application started
+2021-03-21 17:03:42.619 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 17:03:42.623 +01:00 [INF] Hosting environment: Development
+2021-03-21 17:03:42.624 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 17:03:42.659 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 17:03:42.843 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 186.6020ms
+2021-03-21 17:03:42.969 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 17:03:43.101 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 132.6008ms
+2021-03-21 17:03:51.840 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 17:03:51.842 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 2.1162ms
+2021-03-21 17:03:51.939 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 17:03:51.943 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.1737ms
+2021-03-21 17:03:51.943 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/favicon-32x32.png - -
+2021-03-21 17:03:51.981 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2021-03-21 17:03:51.982 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/favicon-32x32.png - - - 200 628 image/png 37.9089ms
+2021-03-21 17:04:02.057 +01:00 [INF] Application started
+2021-03-21 17:04:04.117 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 17:04:04.123 +01:00 [INF] Hosting environment: Development
+2021-03-21 17:04:04.124 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 17:04:04.155 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 17:04:04.328 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 175.4745ms
+2021-03-21 17:04:04.441 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 17:04:04.465 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Asset" for actions - Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web),Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-21 17:04:04.548 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 500 - text/plain 107.6882ms
+2021-03-21 17:05:03.485 +01:00 [INF] Application started
+2021-03-21 17:05:06.016 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 17:05:06.031 +01:00 [INF] Hosting environment: Development
+2021-03-21 17:05:06.033 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 17:05:06.070 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 17:05:06.266 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 196.8708ms
+2021-03-21 17:05:06.399 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 17:05:06.419 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Asset" for actions - Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web),Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-21 17:05:06.487 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 500 - text/plain 88.1456ms
+2021-03-21 17:05:46.146 +01:00 [INF] Application started
+2021-03-21 17:05:48.618 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 17:05:48.621 +01:00 [INF] Hosting environment: Development
+2021-03-21 17:05:48.622 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 17:05:48.647 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 17:05:48.801 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 157.0790ms
+2021-03-21 17:05:48.971 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 17:05:48.999 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Asset" for actions - Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web),Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-21 17:05:49.064 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 500 - text/plain 93.2303ms
+2021-03-21 17:08:10.767 +01:00 [INF] Application started
+2021-03-21 17:08:12.830 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 17:08:12.833 +01:00 [INF] Hosting environment: Development
+2021-03-21 17:08:12.834 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 17:08:12.869 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 17:08:13.027 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 160.5135ms
+2021-03-21 17:08:13.157 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 17:08:13.176 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Asset" for actions - Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web),Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-21 17:08:13.253 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 500 - text/plain 95.3722ms
+2021-03-21 17:11:22.875 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/swagger-ui-bundle.js.map - -
+2021-03-21 17:11:22.887 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/swagger-ui.css.map - -
+2021-03-21 17:11:22.923 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/swagger-ui-standalone-preset.js.map - -
+2021-03-21 17:11:22.979 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/swagger-ui-standalone-preset.js.map - - - 404 - - 55.5981ms
+2021-03-21 17:11:22.981 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/swagger-ui-bundle.js.map - - - 404 - - 106.4367ms
+2021-03-21 17:11:22.981 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/swagger-ui.css.map - - - 404 - - 95.2377ms
+2021-03-21 17:11:28.189 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 17:11:28.191 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Asset" for actions - Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web),Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAllAssets (Hahn.ApplicationProcess.February2021.Web). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-03-21 17:11:28.242 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 500 - text/html;+charset=utf-8 52.4566ms
+2021-03-21 17:11:28.408 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/favicon.ico - -
+2021-03-21 17:11:28.409 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/favicon.ico - - - 404 - - 1.4457ms
+2021-03-21 17:16:46.976 +01:00 [INF] Application started
+2021-03-21 17:16:49.301 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 17:16:49.304 +01:00 [INF] Hosting environment: Development
+2021-03-21 17:16:49.305 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 17:16:49.336 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 17:16:49.515 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 180.0415ms
+2021-03-21 17:16:49.621 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 17:16:49.733 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 112.0463ms
+2021-03-21 17:17:22.344 +01:00 [INF] Request starting HTTP/2 PUT https://localhost:44373/api/Asset/EditAsset/1 application/json 166
+2021-03-21 17:17:22.401 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.EditAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 17:17:22.436 +01:00 [INF] Route matched with {action = "EditAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EditAsset(Int32, Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 17:17:22.732 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.EditAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 17:17:23.064 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 17:17:26.625 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.EditAsset (Hahn.ApplicationProcess.February2021.Web) in 4184.4051ms
+2021-03-21 17:17:26.626 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.EditAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 17:17:26.658 +01:00 [ERR] Attempted to update or delete an entity that does not exist in the store.
+Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: Attempted to update or delete an entity that does not exist in the store.
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryTable`1.Update(IUpdateEntry entry)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryStore.ExecuteTransaction(IList`1 entries, IDiagnosticsLogger`1 updateLogger)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.NonRetryingExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Hahn.ApplicationProcess.February2021.Data.Implementations.UnitOfWork.UnitOfWork.Complete() in C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Data\RepositoryPattern\Implementations\UnitOfWork\UnitOfWork.cs:line 22
+   at Hahn.ApplicationProcess.February2021.Domain.Implementations.AssetProvider.UpdateAsset(Int32 id, SaveAssetDto asset) in C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Domain\Implementations\AssetProvider.cs:line 70
+   at Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.EditAsset(Int32 id, SaveAssetDto asset) in C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web\Controllers\General\AssetController.cs:line 55
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Hahn.ApplicationProcess.February2021.Web.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web\Middleware\ExceptionMiddleware.cs:line 29
+2021-03-21 17:17:26.763 +01:00 [INF] Request finished HTTP/2 PUT https://localhost:44373/api/Asset/EditAsset/1 application/json 166 - 500 - application/json 4419.6397ms
+2021-03-21 17:36:13.428 +01:00 [INF] Application started
+2021-03-21 17:36:15.231 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 17:36:15.235 +01:00 [INF] Hosting environment: Development
+2021-03-21 17:36:15.236 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 17:36:15.269 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 17:36:15.437 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 169.4003ms
+2021-03-21 17:36:15.573 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 17:36:15.698 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 124.8431ms
+2021-03-21 17:36:25.194 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset application/json 159
+2021-03-21 17:36:25.232 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 17:36:25.256 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 17:36:25.493 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 17:36:26.455 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 955.7714ms.
+2021-03-21 17:36:26.461 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-03-21 17:36:26.473 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) in 1211.0924ms
+2021-03-21 17:36:26.473 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 17:36:26.475 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44373/api/Asset application/json 159 - 400 - application/json;+charset=utf-8 1280.4192ms
+2021-03-21 17:36:50.428 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset application/json 167
+2021-03-21 17:36:50.438 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 17:36:50.439 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 17:36:50.500 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 17:36:51.484 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 17:36:51.634 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-21 17:36:55.904 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) in 5465.7995ms
+2021-03-21 17:36:55.905 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 17:36:55.941 +01:00 [ERR] Invalid URI: The format of the URI could not be determined.
+System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at System.Uri..ctor(String uriString)
+   at Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset(SaveAssetDto asset) in C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web\Controllers\General\AssetController.cs:line 43
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Hahn.ApplicationProcess.February2021.Web.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web\Middleware\ExceptionMiddleware.cs:line 29
+2021-03-21 17:36:55.999 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44373/api/Asset application/json 167 - 500 - application/json 5571.3133ms
+2021-03-21 17:37:10.865 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset application/json 167
+2021-03-21 17:37:10.865 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 17:37:10.865 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 17:37:10.906 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 17:37:12.231 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 17:37:12.232 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-21 17:45:07.734 +01:00 [INF] Application started
+2021-03-21 17:45:09.683 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 17:45:09.686 +01:00 [INF] Hosting environment: Development
+2021-03-21 17:45:09.687 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 17:45:09.723 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 17:45:09.898 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 178.0367ms
+2021-03-21 17:45:10.035 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 17:45:10.172 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 136.6748ms
+2021-03-21 17:45:19.738 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 17:45:19.741 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 3.5143ms
+2021-03-21 17:45:19.847 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 17:45:19.858 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 11.0002ms
+2021-03-21 17:45:19.873 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/favicon-32x32.png - -
+2021-03-21 17:45:19.902 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2021-03-21 17:45:19.903 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/favicon-32x32.png - - - 200 628 image/png 29.9899ms
+2021-03-21 17:45:32.229 +01:00 [INF] Application started
+2021-03-21 17:45:33.830 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 17:45:33.834 +01:00 [INF] Hosting environment: Development
+2021-03-21 17:45:33.835 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 17:45:33.863 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 17:45:34.007 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 145.9213ms
+2021-03-21 17:45:34.126 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 17:45:34.291 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 165.5798ms
+2021-03-21 17:46:04.698 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset application/json 167
+2021-03-21 17:46:04.739 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 17:46:04.773 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 17:46:05.003 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 17:46:06.241 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 17:46:06.383 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-21 17:49:01.244 +01:00 [INF] Application started
+2021-03-21 17:49:03.134 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 17:49:03.137 +01:00 [INF] Hosting environment: Development
+2021-03-21 17:49:03.138 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 17:49:03.170 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 17:49:03.348 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 174.4197ms
+2021-03-21 17:49:03.467 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 17:49:03.590 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 122.8617ms
+2021-03-21 17:49:26.801 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset application/json 167
+2021-03-21 17:49:26.863 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 17:49:26.898 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 17:49:27.156 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 17:49:28.298 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 17:49:28.429 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-21 17:50:11.668 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) in 44766.1846ms
+2021-03-21 17:50:11.669 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 17:50:11.703 +01:00 [ERR] Value cannot be null. (Parameter 'uriString')
+System.ArgumentNullException: Value cannot be null. (Parameter 'uriString')
+   at System.Uri..ctor(String uriString)
+   at Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset(SaveAssetDto asset) in C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web\Controllers\General\AssetController.cs:line 43
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Hahn.ApplicationProcess.February2021.Web.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web\Middleware\ExceptionMiddleware.cs:line 29
+2021-03-21 17:50:11.765 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44373/api/Asset application/json 167 - 500 - application/json 44965.2667ms
+2021-03-21 17:50:31.958 +01:00 [INF] Application started
+2021-03-21 17:50:33.524 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 17:50:33.526 +01:00 [INF] Hosting environment: Development
+2021-03-21 17:50:33.527 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 17:50:33.553 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 17:50:33.703 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 151.5621ms
+2021-03-21 17:50:33.867 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 17:50:34.018 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 151.7548ms
+2021-03-21 17:51:47.574 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset application/json 165
+2021-03-21 17:51:47.609 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 17:51:47.641 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 17:51:47.831 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 17:51:49.725 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 1889.3007ms.
+2021-03-21 17:51:49.731 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-03-21 17:51:49.755 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) in 2109.9579ms
+2021-03-21 17:51:49.755 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 17:51:49.757 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44373/api/Asset application/json 165 - 400 - application/json;+charset=utf-8 2182.9697ms
+2021-03-21 17:51:58.653 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset application/json 170
+2021-03-21 17:51:58.653 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 17:51:58.654 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 17:51:58.684 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 17:51:59.358 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 17:51:59.525 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-21 17:51:59.532 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.OkResult in 848.1792ms.
+2021-03-21 17:51:59.533 +01:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2021-03-21 17:51:59.533 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) in 878.758ms
+2021-03-21 17:51:59.533 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 17:51:59.536 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44373/api/Asset application/json 170 - 200 - - 883.1467ms
+2021-03-21 17:52:14.687 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/api/Asset/1 - -
+2021-03-21 17:52:14.693 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/api/Asset/1 - - - 404 - - 6.3226ms
+2021-03-21 17:52:29.635 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/api/Asset?id=1 - -
+2021-03-21 17:52:29.636 +01:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2021-03-21 17:52:29.636 +01:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2021-03-21 17:52:29.637 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/api/Asset?id=1 - - - 405 - - 1.2791ms
+2021-03-21 17:52:46.030 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/api/Asset/GetAssetById?id=1 - -
+2021-03-21 17:52:46.032 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 17:52:46.069 +01:00 [INF] Route matched with {action = "GetAssetById", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAssetById(Int32) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 17:52:46.103 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 17:52:46.121 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 17:52:46.331 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 227.681ms.
+2021-03-21 17:52:46.332 +01:00 [INF] Executing OkObjectResult, writing value of type 'Hahn.ApplicationProcess.February2021.Data.Core.Data.Asset'.
+2021-03-21 17:52:46.338 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web) in 268.54ms
+2021-03-21 17:52:46.338 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 17:52:46.338 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/api/Asset/GetAssetById?id=1 - - - 200 - application/json;+charset=utf-8 308.0742ms
+2021-03-21 17:52:46.408 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/favicon.ico - -
+2021-03-21 17:52:46.415 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/favicon.ico - - - 404 - - 6.7605ms
+2021-03-21 17:58:02.456 +01:00 [INF] Application started
+2021-03-21 17:58:04.201 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 17:58:04.204 +01:00 [INF] Hosting environment: Development
+2021-03-21 17:58:04.205 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 17:58:04.233 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 17:58:04.370 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 134.3369ms
+2021-03-21 17:58:04.505 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 17:58:04.661 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 156.5400ms
+2021-03-21 18:03:58.306 +01:00 [INF] Application started
+2021-03-21 18:04:00.465 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 18:04:00.468 +01:00 [INF] Hosting environment: Development
+2021-03-21 18:04:00.469 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 18:04:00.498 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 18:04:00.661 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 164.3905ms
+2021-03-21 18:04:00.783 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 18:04:00.972 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 189.1328ms
+2021-03-21 18:05:24.224 +01:00 [INF] Application started
+2021-03-21 18:05:26.156 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 18:05:26.159 +01:00 [INF] Hosting environment: Development
+2021-03-21 18:05:26.161 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 18:05:26.196 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 18:05:26.339 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 142.1327ms
+2021-03-21 18:05:26.502 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 18:05:26.688 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 186.4116ms
+2021-03-21 18:05:39.641 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset application/json 159
+2021-03-21 18:05:39.681 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 18:05:39.705 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 18:05:39.905 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 18:05:43.190 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 3280.1167ms.
+2021-03-21 18:05:43.196 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-03-21 18:05:43.210 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) in 3498.2236ms
+2021-03-21 18:05:43.210 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 18:05:43.212 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44373/api/Asset application/json 159 - 400 - application/json;+charset=utf-8 3570.8730ms
+2021-03-21 18:15:10.497 +01:00 [INF] Application started
+2021-03-21 18:15:12.438 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 18:15:12.442 +01:00 [INF] Hosting environment: Development
+2021-03-21 18:15:12.445 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 18:15:12.491 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 18:15:12.656 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 168.8101ms
+2021-03-21 18:15:12.798 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 18:15:12.919 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 120.7222ms
+2021-03-21 18:18:40.819 +01:00 [INF] Application started
+2021-03-21 18:18:42.578 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 18:18:42.581 +01:00 [INF] Hosting environment: Development
+2021-03-21 18:18:42.582 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 18:18:42.606 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 18:18:42.771 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 166.4621ms
+2021-03-21 18:18:42.907 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 18:18:43.081 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 173.9427ms
+2021-03-21 18:21:05.815 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset application/json 170
+2021-03-21 18:21:05.851 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 18:21:05.886 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 18:21:06.120 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 18:21:07.218 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 18:21:07.364 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-21 18:21:07.375 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.OkResult in 1247.8565ms.
+2021-03-21 18:21:07.378 +01:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2021-03-21 18:21:07.382 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) in 1491.9456ms
+2021-03-21 18:21:07.382 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 18:21:07.386 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44373/api/Asset application/json 170 - 200 - - 1571.1824ms
+2021-03-21 18:21:30.029 +01:00 [INF] Request starting HTTP/2 PUT https://localhost:44373/api/Asset/EditAsset/22 application/json 170
+2021-03-21 18:21:30.048 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.EditAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 18:21:30.056 +01:00 [INF] Route matched with {action = "EditAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EditAsset(Int32, Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 18:21:30.084 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.EditAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 18:21:30.453 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 18:21:44.232 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.EditAsset (Hahn.ApplicationProcess.February2021.Web) in 14175.0118ms
+2021-03-21 18:21:44.232 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.EditAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 18:21:44.267 +01:00 [ERR] Attempted to update or delete an entity that does not exist in the store.
+Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: Attempted to update or delete an entity that does not exist in the store.
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryTable`1.Update(IUpdateEntry entry)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryStore.ExecuteTransaction(IList`1 entries, IDiagnosticsLogger`1 updateLogger)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.NonRetryingExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Hahn.ApplicationProcess.February2021.Data.Implementations.UnitOfWork.UnitOfWork.Complete() in C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Data\RepositoryPattern\Implementations\UnitOfWork\UnitOfWork.cs:line 22
+   at Hahn.ApplicationProcess.February2021.Domain.Implementations.AssetProvider.UpdateAsset(Int32 id, SaveAssetDto asset) in C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Domain\Implementations\AssetProvider.cs:line 70
+   at Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.EditAsset(Int32 id, SaveAssetDto asset) in C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web\Controllers\General\AssetController.cs:line 60
+   at lambda_method73(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Hahn.ApplicationProcess.February2021.Web.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web\Middleware\ExceptionMiddleware.cs:line 29
+2021-03-21 18:21:44.336 +01:00 [INF] Request finished HTTP/2 PUT https://localhost:44373/api/Asset/EditAsset/22 application/json 170 - 500 - application/json 14307.1361ms
+2021-03-21 18:21:53.045 +01:00 [INF] Request starting HTTP/2 PUT https://localhost:44373/api/Asset/EditAsset/1 application/json 170
+2021-03-21 18:21:53.047 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.EditAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 18:21:53.047 +01:00 [INF] Route matched with {action = "EditAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EditAsset(Int32, Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 18:21:53.075 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.EditAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 18:21:53.441 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 18:21:53.444 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-21 18:21:53.445 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.EditAsset (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.OkResult in 369.6475ms.
+2021-03-21 18:21:53.445 +01:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2021-03-21 18:21:53.445 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.EditAsset (Hahn.ApplicationProcess.February2021.Web) in 397.7862ms
+2021-03-21 18:21:53.445 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.EditAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 18:21:53.446 +01:00 [INF] Request finished HTTP/2 PUT https://localhost:44373/api/Asset/EditAsset/1 application/json 170 - 200 - - 401.1345ms
+2021-03-21 18:22:12.991 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/api/Asset/GetAssetById?id=1 - -
+2021-03-21 18:22:12.991 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 18:22:12.992 +01:00 [INF] Route matched with {action = "GetAssetById", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAssetById(Int32) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 18:22:13.017 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 18:22:13.018 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 18:22:13.221 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 204.1261ms.
+2021-03-21 18:22:13.226 +01:00 [INF] Executing OkObjectResult, writing value of type 'Hahn.ApplicationProcess.February2021.Data.Core.Data.Asset'.
+2021-03-21 18:22:13.236 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web) in 244.3145ms
+2021-03-21 18:22:13.237 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 18:22:13.237 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/api/Asset/GetAssetById?id=1 - - - 200 - application/json;+charset=utf-8 246.3398ms
+2021-03-21 18:22:26.919 +01:00 [INF] Request starting HTTP/2 DELETE https://localhost:44373/api/Asset/DeleteAsset/1 - -
+2021-03-21 18:22:26.920 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.DeleteAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 18:22:26.921 +01:00 [INF] Route matched with {action = "DeleteAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteAsset(Int32) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 18:22:26.946 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.DeleteAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 18:22:26.947 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 18:22:26.953 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-21 18:22:26.957 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.DeleteAsset (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.OkResult in 10.6427ms.
+2021-03-21 18:22:26.957 +01:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2021-03-21 18:22:26.957 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.DeleteAsset (Hahn.ApplicationProcess.February2021.Web) in 35.7265ms
+2021-03-21 18:22:26.957 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.DeleteAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 18:22:26.959 +01:00 [INF] Request finished HTTP/2 DELETE https://localhost:44373/api/Asset/DeleteAsset/1 - - - 200 - - 39.0016ms
+2021-03-21 18:22:35.062 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/api/Asset/GetAssetById?id=1 - -
+2021-03-21 18:22:35.062 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 18:22:35.063 +01:00 [INF] Route matched with {action = "GetAssetById", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAssetById(Int32) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 18:22:35.085 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 18:22:35.085 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 18:22:35.086 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.216ms.
+2021-03-21 18:22:35.086 +01:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2021-03-21 18:22:35.087 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web) in 23.9195ms
+2021-03-21 18:22:35.087 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 18:22:35.087 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/api/Asset/GetAssetById?id=1 - - - 204 0 - 24.6110ms
+2021-03-21 18:22:54.396 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/api/Asset/GetAssetById?id=1 - -
+2021-03-21 18:22:54.396 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 18:22:54.396 +01:00 [INF] Route matched with {action = "GetAssetById", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAssetById(Int32) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 18:22:54.427 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 18:22:57.154 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 18:23:00.885 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6458.2806ms.
+2021-03-21 18:23:00.885 +01:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2021-03-21 18:23:00.886 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web) in 6489.4617ms
+2021-03-21 18:23:00.886 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 18:23:00.886 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/api/Asset/GetAssetById?id=1 - - - 204 0 - 6490.0582ms
+2021-03-21 18:31:47.653 +01:00 [INF] Request starting HTTP/2 PUT https://localhost:44373/api/Asset/EditAsset/1 application/json 172
+2021-03-21 18:31:47.665 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.EditAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 18:31:47.666 +01:00 [INF] Route matched with {action = "EditAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EditAsset(Int32, Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 18:31:47.692 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.EditAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 18:31:49.012 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.EditAsset (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 1313.4572ms.
+2021-03-21 18:31:49.012 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-03-21 18:31:49.014 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.EditAsset (Hahn.ApplicationProcess.February2021.Web) in 1348.5954ms
+2021-03-21 18:31:49.014 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.EditAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 18:31:49.015 +01:00 [INF] Request finished HTTP/2 PUT https://localhost:44373/api/Asset/EditAsset/1 application/json 172 - 400 - application/json;+charset=utf-8 1361.3321ms
+2021-03-21 18:43:39.328 +01:00 [INF] Application started
+2021-03-21 18:43:41.095 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 18:43:41.099 +01:00 [INF] Hosting environment: Development
+2021-03-21 18:43:41.100 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 18:43:41.131 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 18:43:41.297 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 167.5475ms
+2021-03-21 18:43:41.409 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 18:43:41.531 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 121.5218ms
+2021-03-21 18:43:47.312 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/api/Asset/GetAssetById?id=1 - -
+2021-03-21 18:43:47.356 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 18:43:47.382 +01:00 [INF] Route matched with {action = "GetAssetById", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAssetById(Int32) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 18:43:47.594 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 18:43:47.882 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 18:47:19.386 +01:00 [INF] Application started
+2021-03-21 18:47:21.398 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 18:47:21.401 +01:00 [INF] Hosting environment: Development
+2021-03-21 18:47:21.401 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 18:47:21.429 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 18:47:21.561 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 133.2266ms
+2021-03-21 18:47:21.689 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 18:47:21.841 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 151.5860ms
+2021-03-21 18:48:00.381 +01:00 [INF] Application started
+2021-03-21 18:48:02.312 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 18:48:02.321 +01:00 [INF] Hosting environment: Development
+2021-03-21 18:48:02.322 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 18:48:02.351 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 18:48:02.477 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 122.1444ms
+2021-03-21 18:48:02.601 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 18:48:02.734 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 133.1736ms
+2021-03-21 18:48:30.317 +01:00 [INF] Application started
+2021-03-21 18:48:31.848 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 18:48:31.851 +01:00 [INF] Hosting environment: Development
+2021-03-21 18:48:31.852 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 18:48:31.880 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 18:48:32.052 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 172.6939ms
+2021-03-21 18:48:32.175 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 18:48:32.334 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 159.0111ms
+2021-03-21 18:48:46.114 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/api/Asset/GetAssetById?DataId=1 - -
+2021-03-21 18:48:46.155 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 18:48:46.182 +01:00 [INF] Route matched with {action = "GetAssetById", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAssetById(Int32) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 18:48:46.359 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 18:48:46.667 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 18:51:57.593 +01:00 [INF] Application started
+2021-03-21 18:52:00.020 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 18:52:00.023 +01:00 [INF] Hosting environment: Development
+2021-03-21 18:52:00.024 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 18:52:00.056 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 18:52:00.196 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 140.5414ms
+2021-03-21 18:52:00.316 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 18:52:00.433 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 116.4318ms
+2021-03-21 18:52:05.656 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset/AddAsset application/json 170
+2021-03-21 18:52:05.695 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 18:52:05.728 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 18:52:06.011 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 18:52:08.275 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 18:52:08.431 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-21 18:59:16.604 +01:00 [INF] Application started
+2021-03-21 18:59:18.660 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 18:59:18.663 +01:00 [INF] Hosting environment: Development
+2021-03-21 18:59:18.664 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 18:59:18.692 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 18:59:18.897 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 206.6881ms
+2021-03-21 18:59:19.019 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 18:59:19.136 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 117.0336ms
+2021-03-21 18:59:24.955 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset/AddAsset application/json 170
+2021-03-21 18:59:24.998 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 18:59:25.033 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 18:59:25.221 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 18:59:26.331 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 18:59:26.516 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-21 19:12:34.121 +01:00 [INF] Application started
+2021-03-21 19:12:36.556 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 19:12:36.560 +01:00 [INF] Hosting environment: Development
+2021-03-21 19:12:36.561 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 19:12:36.594 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 19:12:36.738 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 145.0193ms
+2021-03-21 19:12:36.878 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 19:12:37.054 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 175.9629ms
+2021-03-21 19:12:43.991 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset/AddAsset application/json 170
+2021-03-21 19:12:44.032 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 19:12:44.058 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 19:12:44.276 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 19:12:46.243 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 19:12:46.399 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-21 19:31:41.213 +01:00 [INF] Application started
+2021-03-21 19:31:42.962 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 19:31:42.966 +01:00 [INF] Hosting environment: Development
+2021-03-21 19:31:42.967 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 19:31:43.013 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 19:31:43.158 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 145.5102ms
+2021-03-21 19:31:43.279 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 19:31:43.417 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 137.2963ms
+2021-03-21 19:31:48.920 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset/AddAsset application/json 170
+2021-03-21 19:31:48.967 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 19:31:48.996 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 19:31:49.225 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 19:31:50.400 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 19:31:50.538 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-21 19:32:59.696 +01:00 [INF] Application started
+2021-03-21 19:33:01.231 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 19:33:01.244 +01:00 [INF] Hosting environment: Development
+2021-03-21 19:33:01.245 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 19:33:01.275 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 19:33:01.394 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 124.4343ms
+2021-03-21 19:33:01.559 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 19:33:01.687 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 128.0764ms
+2021-03-21 19:33:08.864 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset/AddAsset application/json 170
+2021-03-21 19:33:08.910 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 19:33:08.935 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 19:33:09.146 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 19:33:10.496 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 19:33:10.630 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-21 19:39:33.061 +01:00 [INF] Application started
+2021-03-21 19:40:01.660 +01:00 [INF] Application started
+2021-03-21 19:40:31.723 +01:00 [INF] Application started
+2021-03-21 19:42:39.888 +01:00 [INF] Application started
+2021-03-21 19:44:01.793 +01:00 [INF] Application started
+2021-03-21 19:44:03.942 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 19:44:03.948 +01:00 [INF] Hosting environment: Development
+2021-03-21 19:44:03.949 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 19:44:03.981 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 19:44:04.166 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 188.1479ms
+2021-03-21 19:44:04.319 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 19:44:04.509 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 189.9304ms
+2021-03-21 19:44:20.856 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset/AddAsset application/json 170
+2021-03-21 19:44:20.898 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 19:44:20.933 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 19:44:21.201 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 19:44:25.094 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 19:44:25.227 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-21 19:44:25.237 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.ContentResult in 4028.995ms.
+2021-03-21 19:44:25.239 +01:00 [INF] Executing ContentResult with HTTP Response ContentType of text/plain; charset=utf-8
+2021-03-21 19:44:25.252 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) in 4314.5901ms
+2021-03-21 19:44:25.252 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 19:44:25.255 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44373/api/Asset/AddAsset application/json 170 - 200 42 text/plain;+charset=utf-8 4399.4618ms
+2021-03-21 19:44:36.387 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/api/GetAssetById/1 - -
+2021-03-21 19:44:36.389 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/api/GetAssetById/1 - - - 404 - - 2.3360ms
+2021-03-21 19:45:11.145 +01:00 [INF] Application started
+2021-03-21 19:45:13.277 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 19:45:13.281 +01:00 [INF] Hosting environment: Development
+2021-03-21 19:45:13.282 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 19:45:13.313 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 19:45:13.490 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 179.5407ms
+2021-03-21 19:45:13.601 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 19:45:13.729 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 127.7302ms
+2021-03-21 19:45:39.714 +01:00 [INF] Application started
+2021-03-21 19:45:41.472 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 19:45:41.477 +01:00 [INF] Hosting environment: Development
+2021-03-21 19:45:41.478 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 19:45:41.513 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 19:45:41.692 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 180.9209ms
+2021-03-21 19:45:41.810 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 19:45:41.934 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 124.3054ms
+2021-03-21 19:45:55.446 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset/AddAsset application/json 170
+2021-03-21 19:45:55.493 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 19:45:55.518 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 19:45:55.740 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 19:45:57.831 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 19:45:57.971 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-21 19:45:57.983 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.CreatedResult in 2235.7589ms.
+2021-03-21 19:45:57.988 +01:00 [INF] Executing CreatedResult, writing value of type 'Hahn.ApplicationProcess.February2021.Data.Core.Data.Asset'.
+2021-03-21 19:45:58.007 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) in 2482.6978ms
+2021-03-21 19:45:58.007 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 19:45:58.011 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44373/api/Asset/AddAsset application/json 170 - 201 - application/json;+charset=utf-8 2565.0989ms
+2021-03-21 19:46:26.522 +01:00 [INF] Application started
+2021-03-21 19:46:28.284 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-21 19:46:28.288 +01:00 [INF] Hosting environment: Development
+2021-03-21 19:46:28.289 +01:00 [INF] Content root path: C:\Users\User\source\repos\Hahn\Hahn.ApplicationProcess.February2021.Web\Hahn.ApplicationProcess.February2021.Web
+2021-03-21 19:46:28.320 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/index.html - -
+2021-03-21 19:46:28.519 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/index.html - - - 200 - text/html;charset=utf-8 199.3172ms
+2021-03-21 19:46:28.650 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - -
+2021-03-21 19:46:28.782 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 132.3735ms
+2021-03-21 19:46:33.590 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44373/api/Asset/AddAsset application/json 170
+2021-03-21 19:46:33.631 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 19:46:33.656 +01:00 [INF] Route matched with {action = "AddAsset", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddAsset(Hahn.ApplicationProcess.February2021.Domain.Dtos.SaveAssetDto) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 19:46:33.852 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 19:46:36.004 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 19:46:36.130 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-21 19:46:36.141 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.CreatedResult in 2282.9002ms.
+2021-03-21 19:46:36.146 +01:00 [INF] Executing CreatedResult, writing value of type 'System.String'.
+2021-03-21 19:46:36.152 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web) in 2491.3942ms
+2021-03-21 19:46:36.152 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.AddAsset (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 19:46:36.157 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44373/api/Asset/AddAsset application/json 170 - 201 - text/plain;+charset=utf-8 2566.6759ms
+2021-03-21 19:46:46.054 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/api/Asset/GetAssetById/1 - -
+2021-03-21 19:46:46.059 +01:00 [INF] Executing endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 19:46:46.062 +01:00 [INF] Route matched with {action = "GetAssetById", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAssetById(Int32) on controller Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController (Hahn.ApplicationProcess.February2021.Web).
+2021-03-21 19:46:46.088 +01:00 [INF] Executing action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web) - Validation state: "Valid"
+2021-03-21 19:46:46.113 +01:00 [INF] Entity Framework Core 5.0.4 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=HahnAplication 
+2021-03-21 19:46:46.318 +01:00 [INF] Executed action method Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 229.7197ms.
+2021-03-21 19:46:46.318 +01:00 [INF] Executing OkObjectResult, writing value of type 'Hahn.ApplicationProcess.February2021.Data.Core.Data.Asset'.
+2021-03-21 19:46:46.328 +01:00 [INF] Executed action Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web) in 265.955ms
+2021-03-21 19:46:46.328 +01:00 [INF] Executed endpoint 'Hahn.ApplicationProcess.February2021.Web.Controllers.General.AssetController.GetAssetById (Hahn.ApplicationProcess.February2021.Web)'
+2021-03-21 19:46:46.329 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/api/Asset/GetAssetById/1 - - - 200 - application/json;+charset=utf-8 274.6133ms
+2021-03-21 19:46:46.397 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44373/favicon.ico - -
+2021-03-21 19:46:46.399 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44373/favicon.ico - - - 404 - - 2.4390ms
